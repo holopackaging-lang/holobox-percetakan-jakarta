@@ -1,78 +1,191 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Holobox Pabrik percetakan termurah di jakarta</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Percetakan Offset & Custom Box HOLOBOX</title>
+<meta name="description" content="HOLOBOX - Jasa percetakan offset dan custom box murah, cepat, dan berkualitas. Konsultasi gratis & kirim ke seluruh Indonesia.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            color: white;
-            text-align: center;
-        }
+<style>
+/* Global Styles */
+body {font-family: 'Poppins', sans-serif; margin:0; padding:0; line-height:1.6; color:#333;}
+.container {width:90%; max-width:1100px; margin:auto;}
+h1,h2,h3 {margin:0 0 15px 0;}
+p {margin:0 0 15px 0;}
 
-        .container {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
+/* Hero */
+.hero {
+    background:#ffffff;
+    color:#222;
+    padding:80px 0;
+}
+.hero .hero-container {
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+}
+.hero .hero-text {flex:1; min-width:280px; padding-right:20px;}
+.hero .hero-text img {max-width:180px; margin-bottom:20px;}
+.hero .hero-text h1 {font-size:36px; margin-bottom:20px;}
+.hero .hero-text p {font-size:18px; margin-bottom:30px;}
+.hero .hero-media {flex:1; min-width:280px; text-align:center;}
+.hero .hero-media img, .hero .hero-media video {max-width:100%; border-radius:10px;}
 
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
+/* Buttons */
+.btn {
+    display:inline-block;
+    padding:15px 30px;
+    background:#ff6600;
+    color:#fff;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:600;
+}
+.cta .btn {background:#111;}
 
-        p {
-            max-width: 600px;
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
+/* Sections */
+.section {padding:60px 0;}
+.section h2 {text-align:center; margin-bottom:40px;}
+.box {background:#f4f4f4; padding:25px; border-radius:8px; margin-bottom:20px; text-align:center;}
+.section img {width:100%; border-radius:10px; margin-bottom:15px; transition: transform 0.3s ease;}
+.section img:hover {transform: scale(1.05);}
 
-        .btn {
-            margin-top: 25px;
-            padding: 15px 35px;
-            background: #00ff99;
-            color: #000;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
+/* Form */
+form input, form textarea {width:100%; padding:12px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px;}
+form button {width:100%; padding:15px; background:#ff6600; color:#fff; border:none; font-weight:bold; border-radius:5px; cursor:pointer;}
 
-        .btn:hover {
-            background: #00cc7a;
-        }
+/* CTA */
+.cta {background:#ff6600; color:#fff; text-align:center; padding:60px 20px;}
 
-        footer {
-            margin-top: 40px;
-            font-size: 0.9rem;
-            opacity: 0.7;
-        }
-    </style>
+/* Footer */
+footer {background:#111; color:#fff; text-align:center; padding:20px;}
+
+/* Responsive */
+@media (max-width:768px){
+    .hero .hero-container {flex-direction:column;}
+    .hero .hero-text {padding-right:0; text-align:center;}
+    .hero .hero-text h1 {font-size:28px;}
+    .hero .hero-text p {font-size:16px;}
+    .btn {padding:12px 25px;}
+}
+</style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Percetakan Murah Di Jakarta</h1>
-        <p>
-            Selamat datang di Holobox.  
-            melayani custom packaging dari beragam bahan,
-            Spesialist custom box hologram terbaik dan exclusive serta terpercaya.
-        </p>
 
-        <a href="https://api.whatsapp.com/send/?phone=6288221942179&text&type=phone_number&app_absent=0" class="btn">
-            HUBUNGI SEKARANG
-        </a>
+<!-- HERO -->
+<section class="hero">
+<div class="container hero-container">
+  <!-- KIRI: Logo + Teks -->
+  <div class="hero-text">
+    <img src="https://cyan-lyrebird-582463.hostingersite.com/wp-content/uploads/2025/02/holobox-removebg-preview-190x55.png" alt="Logo HOLOBOX">
+    <h1>Percetakan Offset & Custom Box Berkualitas</h1>
+    <p>HOLOBOX melayani cetak kemasan, brosur, dan box custom dengan harga terbaik & produksi cepat.</p>
+    <a href="https://wa.me/6288221942179" class="btn">💬 Konsultasi Sekarang</a>
+  </div>
+  <!-- KANAN: Foto / Video Produk -->
+  <div class="hero-media">
+    <img src="https://cyan-lyrebird-582463.hostingersite.com/wp-content/uploads/2025/02/mizora-hologram.png" alt="Custom Box HOLOBOX">
+    <!-- Kalau mau pakai video ganti <img> dengan <video> seperti: -->
+    <!--
+    <video autoplay muted loop playsinline>
+      <source src="images/video-holobox.mp4" type="video/mp4">
+      Browser Anda tidak mendukung video.
+    </video>
+    -->
+  </div>
+</div>
+</section>
 
-        <footer>
-            © 2026 Holobox
-        </footer>
-    </div>
+<!-- PRODUK -->
+<section class="section">
+<div class="container">
+<h2>Produk Custom HOLOBOX</h2>
+<div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center;">
+<img src="https://cyan-lyrebird-582463.hostingersite.com/wp-content/uploads/2025/02/mizora-hologram.png" alt="Box Mizora">
+<img src="https://cyan-lyrebird-582463.hostingersite.com/wp-content/uploads/2025/02/softbox-hologram-3-2.png" alt="Softbox Hologram">
+<img src="https://cyan-lyrebird-582463.hostingersite.com/wp-content/uploads/2025/02/corrugated-hologram-2.png" alt="Corrugated Hologram">
+</div>
+</div>
+</section>
+
+<!-- KEUNGGULAN -->
+<section class="section">
+<div class="container">
+<h2>Kenapa Pilih HOLOBOX?</h2>
+<div class="box">
+<h3>✔ Harga Kompetitif</h3>
+<p>Langsung dari produksi, tanpa perantara.</p>
+</div>
+<div class="box">
+<h3>✔ Produksi Cepat</h3>
+<p>Didukung mesin offset modern & tim profesional.</p>
+</div>
+<div class="box">
+<h3>✔ Custom Sesuai Kebutuhan</h3>
+<p>Ukuran, bahan, dan finishing bisa disesuaikan dengan kebutuhan brand Anda.</p>
+</div>
+</div>
+</section>
+
+<!-- LAYANAN -->
+<section class="section" style="background:#fafafa;">
+<div class="container">
+<h2>Layanan HOLOBOX</h2>
+<div class="box">
+<h3>Percetakan Offset</h3>
+<p>Cetak brosur, katalog, flyer, majalah, kartu nama dan kebutuhan promosi lainnya.</p>
+</div>
+<div class="box">
+<h3>Custom Box & Packaging</h3>
+<p>Box makanan, kosmetik, ecommerce, hampers, dan berbagai packaging produk custom.</p>
+</div>
+</div>
+</section>
+
+<!-- TESTIMONI -->
+<section class="section">
+<div class="container">
+<h2>Apa Kata Klien HOLOBOX?</h2>
+<div class="box">
+<p>"Hasil cetak tajam dan pengerjaan cepat. Packaging produk kami jadi lebih premium!"</p>
+<strong>- Owner Brand Skincare</strong>
+</div>
+<div class="box">
+<p>"Harga bersaing dan sangat membantu untuk UMKM kami."</p>
+<strong>- Seller Online Shop</strong>
+</div>
+</div>
+</section>
+
+<!-- CTA BESAR -->
+<section class="cta">
+<h2>Butuh Percetakan Offset & Custom Box?</h2>
+<p>Dapatkan Penawaran Harga Terbaik Hari Ini!</p>
+<a href="https://wa.me/6288221942179" class="btn">Chat WhatsApp Sekarang</a>
+</section>
+
+<!-- FORM LEAD -->
+<section class="section">
+<div class="container">
+<h2>Minta Penawaran Harga</h2>
+<form>
+<input type="text" placeholder="Nama Anda" required>
+<input type="tel" placeholder="Nomor WhatsApp" required>
+<textarea placeholder="Kebutuhan Cetak (Ukuran, Jumlah, Bahan)"></textarea>
+<button type="button" onclick="window.location.href='https://wa.me/6288221942179?text=Halo%20HOLOBOX,%20saya%20ingin%20mendapatkan%20penawaran%20custom%20box'">
+Kirim & Dapatkan Penawaran
+</button>
+</form>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 HOLOBOX | Percetakan Offset & Custom Box</p>
+</footer>
+
 </body>
 </html>
